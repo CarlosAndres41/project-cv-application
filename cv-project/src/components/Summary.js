@@ -5,3 +5,5 @@ const Summary = () => {
         </section>
     );
 };
+
+export default Summary;
