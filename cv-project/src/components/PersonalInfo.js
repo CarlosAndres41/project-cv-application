@@ -43,6 +43,7 @@ const PersonalInfo = () => {
                     <label htmlFor='email'>Email</label>
                     <input type='email' id='email'></input>
                 </div>
+                <button type='submit'>Save and continue</button>
             </form>
         </>
     );
