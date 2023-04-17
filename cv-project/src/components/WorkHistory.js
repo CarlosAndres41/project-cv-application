@@ -40,6 +40,15 @@ const WorkHistory = () => {
                         <input type='checkbox' id='check'></input>
                         <label htmlFor='check'>I currently work here</label>
                     </div>
+                    <div className='form-input description'>
+                        <label htmlFor='desc'>Job Description</label>
+                        <textarea
+                            id='desc'
+                            name='desc'
+                            rows='4'
+                            cols='50'
+                        ></textarea>
+                    </div>
                     <div className='form-input'></div>
                     <p>+ Add another job</p>
                     <button type='submit'>Back</button>
