@@ -1,6 +1,6 @@
 const PersonalInfo = () => {
     return (
-        <>
+        <section>
             <div className='title'>
                 <h3>Personal Info</h3>
             </div>
@@ -45,7 +45,7 @@ const PersonalInfo = () => {
                 </div>
                 <button type='submit'>Save and continue</button>
             </form>
-        </>
+        </section>
     );
 };
 
