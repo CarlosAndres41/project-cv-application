@@ -1,7 +1,24 @@
 const Summary = () => {
     return (
         <section>
-            <div></div>
+            <div className='title'>
+                <h3>Summary</h3>
+            </div>
+            <form>
+                <div className='form-input description'>
+                    <label htmlFor='summary'>
+                        Briefly tell us about your background
+                    </label>
+                    <textarea
+                        id='summary'
+                        name='summary'
+                        rows='4'
+                        cols='50'
+                    ></textarea>
+                </div>
+                <button type='submit'>Back</button>
+                <button type='submit'>Save and continue</button>
+            </form>
         </section>
     );
 };
