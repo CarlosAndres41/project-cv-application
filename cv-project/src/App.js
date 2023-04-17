@@ -3,6 +3,7 @@ import Header from './components/Header';
 import PersonalInfo from './components/PersonalInfo';
 import WorkHistory from './components/WorkHistory';
 import Education from './components/Education';
+import Summary from './components/Summary';
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
                 <PersonalInfo />
                 <WorkHistory />
                 <Education />
+                <Summary />
             </>
         );
     }
