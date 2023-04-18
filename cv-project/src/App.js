@@ -14,6 +14,7 @@ class App extends Component {
             personal: {
                 fName: '',
                 lName: '',
+                profession: '',
                 city: '',
                 post: '',
                 country: '',
@@ -42,11 +43,20 @@ class App extends Component {
         };
     }
 
+    handleChangePersonal = (e) => {
+        let input = e.target.id;
+        this.setState({
+            personal: {
+                [input]: e.target.value,
+            },
+        });
+    };
+
     render() {
         return (
             <>
                 <Header />
-                <PersonalInfo />
+                <PersonalInfo handler={this.handleChangePersonal} />
                 <WorkHistory />
                 <Education />
                 <Summary />
