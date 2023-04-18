@@ -1,4 +1,4 @@
-const WorkHistory = () => {
+const WorkHistory = (props) => {
     return (
         <section>
             <div>
@@ -9,31 +9,55 @@ const WorkHistory = () => {
                     <div className='form-pair'>
                         <div className='form-input'>
                             <label htmlFor='title'>Job Title</label>
-                            <input type='text' id='title'></input>
+                            <input
+                                type='text'
+                                id='title'
+                                onChange={props.handler}
+                            ></input>
                         </div>
                         <div className='form-input'>
                             <label htmlFor='employer'>Employer</label>
-                            <input type='text' id='employer'></input>
+                            <input
+                                type='text'
+                                id='employer'
+                                onChange={props.handler}
+                            ></input>
                         </div>
                     </div>
                     <div className='form-pair'>
                         <div className='form-input'>
                             <label htmlFor='city'>City/State</label>
-                            <input type='text' id='city'></input>
+                            <input
+                                type='text'
+                                id='city'
+                                onChange={props.handler}
+                            ></input>
                         </div>
                         <div className='form-input'>
                             <label htmlFor='country'>Country</label>
-                            <input type='text' id='country'></input>
+                            <input
+                                type='text'
+                                id='country'
+                                onChange={props.handler}
+                            ></input>
                         </div>
                     </div>
                     <div className='form-pair'>
                         <div className='form-input'>
                             <label htmlFor='start'>Start Date</label>
-                            <input type='text' id='start'></input>
+                            <input
+                                type='date'
+                                id='start'
+                                onChange={props.handler}
+                            ></input>
                         </div>
                         <div className='form-input'>
                             <label htmlFor='end'>End Date</label>
-                            <input type='tel' id='end'></input>
+                            <input
+                                type='date'
+                                id='end'
+                                onChange={props.handler}
+                            ></input>
                         </div>
                     </div>
                     <div className='form-input checkbox'>
@@ -47,6 +71,7 @@ const WorkHistory = () => {
                             name='desc'
                             rows='4'
                             cols='50'
+                            onChange={props.handler}
                         ></textarea>
                     </div>
                     <div className='form-input'></div>
