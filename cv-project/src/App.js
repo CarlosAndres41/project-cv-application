@@ -49,6 +49,7 @@ class App extends Component {
         let input = e.target.id;
         this.setState({
             personal: {
+                ...this.state.personal,
                 [input]: e.target.value,
             },
         });
@@ -58,6 +59,7 @@ class App extends Component {
         let input = e.target.id;
         this.setState({
             work: {
+                ...this.state.work,
                 [input]: this.state.work[input].concat(e.target.value),
             },
         });
@@ -67,6 +69,7 @@ class App extends Component {
         let input = e.target.id;
         this.setState({
             education: {
+                ...this.state.education,
                 [input]: this.state.work[input].concat(e.target.value),
             },
         });
@@ -76,6 +79,7 @@ class App extends Component {
         let input = e.target.id;
         this.setState({
             summary: {
+                ...this.state.summary,
                 [input]: e.target.value,
             },
         });
