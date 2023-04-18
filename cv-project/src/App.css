@@ -64,3 +64,53 @@ form {
     flex-direction: row;
 }
 /* Sections End */
+
+/* Preview */
+.preview {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.personal-info {
+    background-color: #3c79f5;
+    color: white;
+    padding: 1rem;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-body h1 {
+    color: #3c79f5;
+}
+
+.main-body h3 {
+    color: #5b8fb9;
+}
+
+.main-body h4 {
+    font-weight: 300;
+}
+
+.main-body h5 {
+    font-weight: 200;
+}
+
+.main-body span {
+    font-size: 80%;
+}
+
+.cv-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cv-head,
+.summary h1 {
+    padding-bottom: 1rem;
+}
