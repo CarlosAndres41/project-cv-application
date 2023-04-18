@@ -40,7 +40,7 @@ class App extends Component {
                 end: '',
             },
             summary: {
-                desc: '',
+                summary: '',
             },
         };
     }
