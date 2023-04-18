@@ -60,9 +60,15 @@ class App extends Component {
                 [input]: this.state.work[input].concat(e.target.value),
             },
         });
-        setTimeout(() => {
-            console.log(this.state.work);
-        }, 1000);
+    };
+
+    handleChangeEducation = (e) => {
+        let input = e.target.id;
+        this.setState({
+            education: {
+                [input]: this.state.work[input].concat(e.target.value),
+            },
+        });
     };
 
     render() {
@@ -71,7 +77,7 @@ class App extends Component {
                 <Header />
                 <PersonalInfo handler={this.handleChangePersonal} />
                 <WorkHistory handler={this.handleChangeWork} />
-                <Education />
+                <Education handler={this.handleChangeEducation} />
                 <Summary />
             </>
         );
