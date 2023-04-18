@@ -4,6 +4,7 @@ import PersonalInfo from './components/PersonalInfo';
 import WorkHistory from './components/WorkHistory';
 import Education from './components/Education';
 import Summary from './components/Summary';
+import Preview from './components/Preview';
 import './App.css';
 
 class App extends Component {
@@ -88,6 +89,7 @@ class App extends Component {
                 <WorkHistory handler={this.handleChangeWork} />
                 <Education handler={this.handleChangeEducation} />
                 <Summary handler={this.handleChangeSummary} />
+                <Preview data={this.state} />
             </>
         );
     }
