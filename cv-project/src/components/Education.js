@@ -35,7 +35,7 @@ const Education = () => {
                         <input type='tel' id='end'></input>
                     </div>
                 </div>
-                <div className='form-input'>
+                <div className='form-input checkbox'>
                     <input type='checkbox' id='check'></input>
                     <label htmlFor='check'>I currently attend here</label>
                 </div>
