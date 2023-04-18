@@ -28,11 +28,11 @@ const Education = () => {
                 <div className='form-pair'>
                     <div className='form-input'>
                         <label htmlFor='start'>Start Date</label>
-                        <input type='text' id='start'></input>
+                        <input type='date' id='start'></input>
                     </div>
                     <div className='form-input'>
                         <label htmlFor='end'>Graduation Date</label>
-                        <input type='tel' id='end'></input>
+                        <input type='date' id='end'></input>
                     </div>
                 </div>
                 <div className='form-input checkbox'>
