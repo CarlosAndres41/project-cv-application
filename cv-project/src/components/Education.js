@@ -1,4 +1,4 @@
-const Education = () => {
+const Education = (props) => {
     return (
         <section>
             <div className='title'>
@@ -8,31 +8,55 @@ const Education = () => {
                 <div className='form-pair'>
                     <div className='form-input'>
                         <label htmlFor='school'>School Name</label>
-                        <input type='text' id='school'></input>
+                        <input
+                            type='text'
+                            id='school'
+                            onChange={props.handler}
+                        ></input>
                     </div>
                     <div className='form-input'>
                         <label htmlFor='location'>Location</label>
-                        <input type='text' id='location'></input>
+                        <input
+                            type='text'
+                            id='location'
+                            onChange={props.handler}
+                        ></input>
                     </div>
                 </div>
                 <div className='form-pair'>
                     <div className='form-input'>
                         <label htmlFor='degree'>Degree</label>
-                        <input type='text' id='degree'></input>
+                        <input
+                            type='text'
+                            id='degree'
+                            onChange={props.handler}
+                        ></input>
                     </div>
                     <div className='form-input'>
                         <label htmlFor='field'>Field Of Study</label>
-                        <input type='text' id='field'></input>
+                        <input
+                            type='text'
+                            id='field'
+                            onChange={props.handler}
+                        ></input>
                     </div>
                 </div>
                 <div className='form-pair'>
                     <div className='form-input'>
                         <label htmlFor='start'>Start Date</label>
-                        <input type='date' id='start'></input>
+                        <input
+                            type='date'
+                            id='start'
+                            onChange={props.handler}
+                        ></input>
                     </div>
                     <div className='form-input'>
                         <label htmlFor='end'>Graduation Date</label>
-                        <input type='date' id='end'></input>
+                        <input
+                            type='date'
+                            id='end'
+                            onChange={props.handler}
+                        ></input>
                     </div>
                 </div>
                 <div className='form-input checkbox'>
