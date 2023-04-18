@@ -71,6 +71,15 @@ class App extends Component {
         });
     };
 
+    handleChangeSummary = (e) => {
+        let input = e.target.id;
+        this.setState({
+            summary: {
+                [input]: e.target.value,
+            },
+        });
+    };
+
     render() {
         return (
             <>
@@ -78,7 +87,7 @@ class App extends Component {
                 <PersonalInfo handler={this.handleChangePersonal} />
                 <WorkHistory handler={this.handleChangeWork} />
                 <Education handler={this.handleChangeEducation} />
-                <Summary />
+                <Summary handler={this.handleChangeSummary} />
             </>
         );
     }
