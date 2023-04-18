@@ -28,6 +28,7 @@ class App extends Component {
                 country: [],
                 start: [],
                 end: [],
+                desc: [],
             },
             education: {
                 school: [],
@@ -52,12 +53,24 @@ class App extends Component {
         });
     };
 
+    handleChangeWork = (e) => {
+        let input = e.target.id;
+        this.setState({
+            work: {
+                [input]: this.state.work[input].concat(e.target.value),
+            },
+        });
+        setTimeout(() => {
+            console.log(this.state.work);
+        }, 1000);
+    };
+
     render() {
         return (
             <>
                 <Header />
                 <PersonalInfo handler={this.handleChangePersonal} />
-                <WorkHistory />
+                <WorkHistory handler={this.handleChangeWork} />
                 <Education />
                 <Summary />
             </>
