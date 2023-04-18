@@ -8,8 +8,8 @@ const Preview = (props) => {
                 </h2>
                 <h4>{props.data.personal.profession}</h4>
                 <span>{props.data.personal.city}, </span>
-                <span>{props.data.personal.country}</span>
-                <h5>{props.data.personal.postal}</h5>
+                <span>{props.data.personal.country}, </span>
+                <span>{props.data.personal.postal}</span>
                 <h5>{props.data.personal.phone}</h5>
                 <h5>{props.data.personal.email}</h5>
             </div>
@@ -30,8 +30,10 @@ const Preview = (props) => {
                                 {props.data.work.country}
                             </h5>
                         </div>
-                        <span>{props.data.work.start} / </span>
-                        <span>{props.data.work.end}</span>
+                        <div className='cv-pair'>
+                            <span>{props.data.work.start} / </span>
+                            <span>{props.data.work.end}</span>
+                        </div>
                     </div>
                     <p>{props.data.work.desc}</p>
                     <hr></hr>
@@ -45,8 +47,10 @@ const Preview = (props) => {
                             <h5>{props.data.work.location}</h5>
                             <span>{props.data.work.field}</span>
                         </div>
-                        <span>{props.data.education.start} / </span>
-                        <span>{props.data.education.end}</span>
+                        <div className='cv-pair'>
+                            <span>{props.data.education.start} / </span>
+                            <span>{props.data.education.end}</span>
+                        </div>
                     </div>
                 </div>
             </div>
