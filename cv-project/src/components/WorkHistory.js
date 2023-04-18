@@ -8,8 +8,8 @@ const WorkHistory = () => {
                 <form>
                     <div className='form-pair'>
                         <div className='form-input'>
-                            <label htmlFor='job-title'>Job Title</label>
-                            <input type='text' id='fName'></input>
+                            <label htmlFor='title'>Job Title</label>
+                            <input type='text' id='title'></input>
                         </div>
                         <div className='form-input'>
                             <label htmlFor='employer'>Employer</label>
