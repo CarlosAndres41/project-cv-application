@@ -23,21 +23,21 @@ class App extends Component {
                 email: '',
             },
             work: {
-                title: [],
-                employer: [],
-                city: [],
-                country: [],
-                start: [],
-                end: [],
-                desc: [],
+                title: '',
+                employer: '',
+                city: '',
+                country: '',
+                start: '',
+                end: '',
+                desc: '',
             },
             education: {
-                school: [],
-                location: [],
-                degree: [],
-                field: [],
-                start: [],
-                end: [],
+                school: '',
+                location: '',
+                degree: '',
+                field: '',
+                start: '',
+                end: '',
             },
             summary: {
                 desc: '',
@@ -60,7 +60,7 @@ class App extends Component {
         this.setState({
             work: {
                 ...this.state.work,
-                [input]: this.state.work[input].concat(e.target.value),
+                [input]: e.target.value,
             },
         });
     };
@@ -70,7 +70,7 @@ class App extends Component {
         this.setState({
             education: {
                 ...this.state.education,
-                [input]: this.state.work[input].concat(e.target.value),
+                [input]: e.target.value,
             },
         });
     };
