@@ -75,9 +75,11 @@ const PersonalInfo = (props) => {
                         onChange={props.handler}
                     ></input>
                 </div>
-                <button type='submit' className='next'>
-                    Next: Work History
-                </button>
+                <div className='buttons'>
+                    <button type='submit' className='next'>
+                        Next: Work History
+                    </button>
+                </div>
             </form>
         </section>
     );
