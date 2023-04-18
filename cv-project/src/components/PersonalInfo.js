@@ -35,7 +35,7 @@ const PersonalInfo = () => {
                         <input type='text' id='country'></input>
                     </div>
                     <div className='form-input'>
-                        <label htmlFor='pnone'>Phone</label>
+                        <label htmlFor='phone'>Phone</label>
                         <input type='tel' id='phone'></input>
                     </div>
                 </div>
