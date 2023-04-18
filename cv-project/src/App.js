@@ -87,14 +87,14 @@ class App extends Component {
 
     render() {
         return (
-            <>
+            <div className='main'>
                 <Header />
                 <PersonalInfo handler={this.handleChangePersonal} />
                 <WorkHistory handler={this.handleChangeWork} />
                 <Education handler={this.handleChangeEducation} />
                 <Summary handler={this.handleChangeSummary} />
                 <Preview data={this.state} />
-            </>
+            </div>
         );
     }
 }

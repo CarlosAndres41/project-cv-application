@@ -1,6 +1,6 @@
 const WorkHistory = (props) => {
     return (
-        <section>
+        <section className='work-history'>
             <div>
                 <div className='title'>
                     <h3>Work History</h3>

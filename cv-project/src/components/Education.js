@@ -1,6 +1,6 @@
 const Education = (props) => {
     return (
-        <section>
+        <section className='education'>
             <div className='title'>
                 <h3>Education</h3>
             </div>

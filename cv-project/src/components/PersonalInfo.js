@@ -1,6 +1,6 @@
 const PersonalInfo = (props) => {
     return (
-        <section>
+        <section className='personal'>
             <div className='title'>
                 <h3>Personal Info</h3>
             </div>
@@ -76,7 +76,7 @@ const PersonalInfo = (props) => {
                     ></input>
                 </div>
                 <div className='buttons'>
-                    <button type='submit' className='next first-btn'>
+                    <button type='submit' className='next first'>
                         Next: Work History
                     </button>
                 </div>
