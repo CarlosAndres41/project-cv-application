@@ -76,7 +76,7 @@ const PersonalInfo = (props) => {
                     ></input>
                 </div>
                 <div className='buttons'>
-                    <button type='submit' className='next'>
+                    <button type='submit' className='next first-btn'>
                         Next: Work History
                     </button>
                 </div>
