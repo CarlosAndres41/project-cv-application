@@ -9,6 +9,37 @@ import './App.css';
 class App extends Component {
     constructor() {
         super();
+
+        this.state = {
+            personal: {
+                fName: '',
+                lName: '',
+                city: '',
+                post: '',
+                country: '',
+                phone: '',
+                email: '',
+            },
+            work: {
+                title: [],
+                employer: [],
+                city: [],
+                country: [],
+                start: [],
+                end: [],
+            },
+            education: {
+                school: [],
+                location: [],
+                degree: [],
+                field: [],
+                start: [],
+                end: [],
+            },
+            summary: {
+                desc: '',
+            },
+        };
     }
 
     render() {
