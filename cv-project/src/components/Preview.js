@@ -16,7 +16,7 @@ const Preview = (props) => {
             <div className='main-body'>
                 <div className='summary'>
                     <h1>Summary</h1>
-                    <p>{props.data.summary.desc}</p>
+                    <p>{props.data.summary.summary}</p>
                     <hr></hr>
                 </div>
                 <div className='work-history'>
