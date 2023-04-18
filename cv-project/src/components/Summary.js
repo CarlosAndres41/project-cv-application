@@ -1,4 +1,4 @@
-const Summary = () => {
+const Summary = (props) => {
     return (
         <section>
             <div className='title'>
@@ -14,6 +14,7 @@ const Summary = () => {
                         name='summary'
                         rows='4'
                         cols='50'
+                        onChange={props.handler}
                     ></textarea>
                 </div>
                 <button type='submit'>Back</button>
