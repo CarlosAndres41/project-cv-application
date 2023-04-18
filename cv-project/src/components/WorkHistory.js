@@ -76,8 +76,12 @@ const WorkHistory = (props) => {
                     </div>
                     <div className='form-input'></div>
                     <p>+ Add another job</p>
-                    <button type='submit'>Back</button>
-                    <button type='submit'>Save and continue</button>
+                    <button type='submit' className='back'>
+                        Back
+                    </button>
+                    <button type='submit' className='next'>
+                        Next: Education
+                    </button>
                 </form>
             </div>
         </section>

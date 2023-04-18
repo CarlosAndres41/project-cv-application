@@ -75,7 +75,9 @@ const PersonalInfo = (props) => {
                         onChange={props.handler}
                     ></input>
                 </div>
-                <button type='submit'>Save and continue</button>
+                <button type='submit' className='next'>
+                    Next: Work History
+                </button>
             </form>
         </section>
     );

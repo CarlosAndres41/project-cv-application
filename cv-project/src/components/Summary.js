@@ -17,8 +17,12 @@ const Summary = (props) => {
                         onChange={props.handler}
                     ></textarea>
                 </div>
-                <button type='submit'>Back</button>
-                <button type='submit'>Save and continue</button>
+                <button type='submit' className='back'>
+                    Back
+                </button>
+                <button type='submit' className='next'>
+                    Show Preview
+                </button>
             </form>
         </section>
     );

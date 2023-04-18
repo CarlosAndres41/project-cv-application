@@ -64,8 +64,12 @@ const Education = (props) => {
                     <label htmlFor='check'>I currently attend here</label>
                 </div>
                 <p>+ Add another degree</p>
-                <button type='submit'>Back</button>
-                <button type='submit'>Save and continue</button>
+                <button type='submit' className='back'>
+                    Back
+                </button>
+                <button type='submit' className='next'>
+                    Next: summary
+                </button>
             </form>
         </section>
     );
