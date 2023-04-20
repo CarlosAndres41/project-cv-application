@@ -54,14 +54,14 @@ const Preview = (props) => {
                     </div>
                 </div>
             </div>
-            {/* <button
-                onClick={(e) => {
-                    e.preventDefault();
-                    console.log(props);
-                }}
-            >
-                Show
-            </button> */}
+            <div className='buttons'>
+                <button type='submit' className='back' data-current='preview'>
+                    Edit
+                </button>
+                <button type='submit' className='next'>
+                    Save PDF
+                </button>
+            </div>
         </section>
     );
 };
