@@ -157,18 +157,21 @@ class App extends Component {
                     <WorkHistory
                         handler={this.handleChangeWork}
                         next={this.handleNext}
+                        back={this.handleBack}
                     />
                 )}
                 {this.state.education.show && (
                     <Education
                         handler={this.handleChangeEducation}
                         next={this.handleNext}
+                        back={this.handleBack}
                     />
                 )}
                 {this.state.summary.show && (
                     <Summary
                         handler={this.handleChangeSummary}
                         next={this.handleNext}
+                        back={this.handleBack}
                     />
                 )}
                 {this.state.preview.show && (
