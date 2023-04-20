@@ -169,6 +169,7 @@ textarea:focus {
 .add {
     cursor: pointer;
     color: var(--logo);
+    width: fit-content;
 }
 
 .add:hover {
