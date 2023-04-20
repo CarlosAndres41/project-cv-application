@@ -7,6 +7,8 @@ import Summary from './components/Summary';
 import Preview from './components/Preview';
 import './App.css';
 
+import { jsPDF } from 'jspdf';
+
 class App extends Component {
     constructor() {
         super();
