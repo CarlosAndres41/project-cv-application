@@ -170,6 +170,7 @@ class App extends Component {
                         handler={this.handleChangeWork}
                         next={this.handleNext}
                         back={this.handleBack}
+                        add={this.handleAdd}
                     />
                 )}
                 {this.state.education.show && (
@@ -177,6 +178,7 @@ class App extends Component {
                         handler={this.handleChangeEducation}
                         next={this.handleNext}
                         back={this.handleBack}
+                        add={this.handleAdd}
                     />
                 )}
                 {this.state.summary.show && (
