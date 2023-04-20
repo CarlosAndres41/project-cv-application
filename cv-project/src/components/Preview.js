@@ -57,7 +57,12 @@ const Preview = (props) => {
                 </div>
             </section>
             <div className='buttons preview-btns'>
-                <button type='submit' className='back' data-current='preview'>
+                <button
+                    type='submit'
+                    className='back'
+                    data-current='preview'
+                    onClick={props.edit}
+                >
                     Edit
                 </button>
                 <button type='submit' className='next'>
