@@ -205,7 +205,11 @@ class App extends Component {
                     />
                 )}
                 {this.state.preview.show && (
-                    <Preview data={this.state} next={this.handleNext} />
+                    <Preview
+                        data={this.state}
+                        next={this.handleNext}
+                        edit={this.handleEdit}
+                    />
                 )}
             </div>
         );
