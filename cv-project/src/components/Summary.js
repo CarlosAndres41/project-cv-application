@@ -18,7 +18,12 @@ const Summary = (props) => {
                     ></textarea>
                 </div>
                 <div className='buttons'>
-                    <button type='submit' className='back'>
+                    <button
+                        type='submit'
+                        className='back'
+                        onClick={props.back}
+                        data-current='summary'
+                    >
                         Back
                     </button>
                     <button

@@ -65,7 +65,12 @@ const Education = (props) => {
                 </div>
                 <p>+ Add another degree</p>
                 <div className='buttons'>
-                    <button type='submit' className='back'>
+                    <button
+                        type='submit'
+                        className='back'
+                        onClick={props.back}
+                        data-current='education'
+                    >
                         Back
                     </button>
                     <button

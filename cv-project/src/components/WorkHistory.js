@@ -77,7 +77,12 @@ const WorkHistory = (props) => {
                     <div className='form-input'></div>
                     <p>+ Add another job</p>
                     <div className='buttons'>
-                        <button type='submit' className='back'>
+                        <button
+                            type='submit'
+                            className='back'
+                            onClick={props.back}
+                            data-current='work'
+                        >
                             Back
                         </button>
                         <button
