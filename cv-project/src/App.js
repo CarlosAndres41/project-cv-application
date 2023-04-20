@@ -145,6 +145,16 @@ class App extends Component {
         });
     };
 
+    handleAdd = (e) => {
+        let current = e.target.dataset.current;
+        this.setState({
+            [current]: {
+                ...this.state[current],
+                count: this.state[current].count + 1,
+            },
+        });
+    };
+
     render() {
         return (
             <div className='main'>
