@@ -127,6 +127,22 @@ class App extends Component {
         });
     };
 
+    handleBack = (e) => {
+        e.preventDefault();
+        let current = e.target.dataset.current;
+        let back = this.structure[current].back;
+        this.setState({
+            [current]: {
+                ...this.state[current],
+                show: false,
+            },
+            [back]: {
+                ...this.state[back],
+                show: true,
+            },
+        });
+    };
+
     render() {
         return (
             <div className='main'>
