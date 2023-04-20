@@ -135,19 +135,29 @@ class App extends Component {
                     <PersonalInfo
                         handler={this.handleChangePersonal}
                         next={this.handleNext}
-                        structure={this.structure}
                     />
                 )}
                 {this.state.work.show && (
-                    <WorkHistory handler={this.handleChangeWork} />
+                    <WorkHistory
+                        handler={this.handleChangeWork}
+                        next={this.handleNext}
+                    />
                 )}
                 {this.state.education.show && (
-                    <Education handler={this.handleChangeEducation} />
+                    <Education
+                        handler={this.handleChangeEducation}
+                        next={this.handleNext}
+                    />
                 )}
                 {this.state.summary.show && (
-                    <Summary handler={this.handleChangeSummary} />
+                    <Summary
+                        handler={this.handleChangeSummary}
+                        next={this.handleNext}
+                    />
                 )}
-                {this.state.preview.show && <Preview data={this.state} />}
+                {this.state.preview.show && (
+                    <Preview data={this.state} next={this.handleNext} />
+                )}
             </div>
         );
     }
