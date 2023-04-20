@@ -155,6 +155,20 @@ class App extends Component {
         });
     };
 
+    handleEdit = (e) => {
+        let current = e.target.dataset.current;
+        this.setState({
+            [current]: {
+                ...this.state[current],
+                show: false,
+            },
+            personal: {
+                ...this.state.personal,
+                show: true,
+            },
+        });
+    };
+
     render() {
         return (
             <div className='main'>
