@@ -75,7 +75,9 @@ const WorkHistory = (props) => {
                         ></textarea>
                     </div>
                     <div className='form-input'></div>
-                    <p className='add'>+ Add another job</p>
+                    <p className='add' data-current='work' onClick={props.add}>
+                        + Add another job
+                    </p>
                     <div className='buttons'>
                         <button
                             type='submit'

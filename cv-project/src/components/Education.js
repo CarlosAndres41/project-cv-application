@@ -63,7 +63,9 @@ const Education = (props) => {
                     <input type='checkbox' id='check'></input>
                     <label htmlFor='check'>I currently attend here</label>
                 </div>
-                <p className='add'>+ Add another degree</p>
+                <p className='add' data-current='education' onClick={props.add}>
+                    + Add another degree
+                </p>
                 <div className='buttons'>
                     <button
                         type='submit'
