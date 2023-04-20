@@ -32,7 +32,7 @@ class App extends Component {
                 end: '',
                 desc: '',
                 show: false,
-                count: 1,
+                count: [1],
             },
             education: {
                 school: '',
@@ -42,7 +42,7 @@ class App extends Component {
                 start: '',
                 end: '',
                 show: false,
-                count: 1,
+                count: [1],
             },
             summary: {
                 summary: '',
@@ -150,7 +150,7 @@ class App extends Component {
         this.setState({
             [current]: {
                 ...this.state[current],
-                count: this.state[current].count + 1,
+                count: this.state[current].count.concat(1),
             },
         });
     };
