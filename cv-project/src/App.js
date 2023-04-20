@@ -173,14 +173,26 @@ class App extends Component {
 
     handleSave = (e) => {
         e.preventDefault();
-        const cv = document.querySelector('.preview');
 
-        const pdf = new jsPDF();
-        pdf.html(cv, {
-            callback: function (pdf) {
-                pdf.save();
-            },
-        });
+        const cv = document.querySelector('.preview');
+        var mywindow = window.open('', 'PRINT', 'height=600,width=600');
+        mywindow.document.write(cv.innerHTML);
+        mywindow.document.close();
+        mywindow.focus();
+        mywindow.print();
+        // const pdf = new jsPDF({
+        //     orientation: 'p',
+        //     unit: 'mm',
+        //     format: 'a4',
+        //     putOnlyUsedFonts: true,
+        //     floatPrecision: 16, // or "smart", default is 16
+        // });
+        // pdf.html(cv, {
+        //     callback: function (pdf) {
+        //         pdf.save();
+        //     },
+        //     margin: 10,
+        // });
     };
 
     render() {
