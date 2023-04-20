@@ -76,7 +76,12 @@ const PersonalInfo = (props) => {
                     ></input>
                 </div>
                 <div className='buttons'>
-                    <button type='submit' className='next first'>
+                    <button
+                        type='submit'
+                        className='next first'
+                        onClick={props.next}
+                        data-current='personal'
+                    >
                         Next: Work History
                     </button>
                 </div>

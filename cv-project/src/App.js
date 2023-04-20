@@ -52,6 +52,25 @@ class App extends Component {
         };
     }
 
+    structure = {
+        personal: {
+            back: null,
+            next: 'work',
+        },
+        work: {
+            back: 'personal',
+            next: 'education',
+        },
+        education: {
+            back: 'work',
+            next: 'summary',
+        },
+        summary: {
+            back: 'education',
+            next: 'preview',
+        },
+    };
+
     handleChangePersonal = (e) => {
         let input = e.target.id;
         this.setState({
@@ -92,10 +111,10 @@ class App extends Component {
         });
     };
 
-    handleNext = () => {
-        let current = '';
-        let next = '';
-
+    handleNext = (e) => {
+        e.preventDefault();
+        let current = e.target.dataset.current;
+        let next = this.structure[current].next;
         this.setState({
             [current]: {
                 ...this.state[current],
@@ -113,7 +132,11 @@ class App extends Component {
             <div className='main'>
                 <Header />
                 {this.state.personal.show && (
-                    <PersonalInfo handler={this.handleChangePersonal} />
+                    <PersonalInfo
+                        handler={this.handleChangePersonal}
+                        next={this.handleNext}
+                        structure={this.structure}
+                    />
                 )}
                 {this.state.work.show && (
                     <WorkHistory handler={this.handleChangeWork} />
