@@ -32,6 +32,7 @@ class App extends Component {
                 end: '',
                 desc: '',
                 show: false,
+                count: 1,
             },
             education: {
                 school: '',
@@ -41,6 +42,7 @@ class App extends Component {
                 start: '',
                 end: '',
                 show: false,
+                count: 1,
             },
             summary: {
                 summary: '',
