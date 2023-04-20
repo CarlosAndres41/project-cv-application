@@ -65,7 +65,7 @@ const Preview = (props) => {
                 >
                     Edit
                 </button>
-                <button type='submit' className='next'>
+                <button type='submit' className='next' onClick={props.save}>
                     Save PDF
                 </button>
             </div>
