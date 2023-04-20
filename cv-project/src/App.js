@@ -92,6 +92,22 @@ class App extends Component {
         });
     };
 
+    handleNext = () => {
+        let current = '';
+        let next = '';
+
+        this.setState({
+            [current]: {
+                ...this.state[current],
+                show: false,
+            },
+            [next]: {
+                ...this.state[next],
+                show: true,
+            },
+        });
+    };
+
     render() {
         return (
             <div className='main'>
