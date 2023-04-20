@@ -176,8 +176,10 @@ class App extends Component {
         const cv = document.querySelector('.preview');
 
         const pdf = new jsPDF();
-        pdf.addHTML(cv, function () {
-            pdf.save('my-cv.pdf');
+        pdf.html(cv, {
+            callback: function (pdf) {
+                pdf.save();
+            },
         });
     };
 
