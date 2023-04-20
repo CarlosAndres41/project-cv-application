@@ -21,6 +21,7 @@ class App extends Component {
                 country: '',
                 phone: '',
                 email: '',
+                show: true,
             },
             work: {
                 title: '',
@@ -30,6 +31,7 @@ class App extends Component {
                 start: '',
                 end: '',
                 desc: '',
+                show: false,
             },
             education: {
                 school: '',
@@ -38,9 +40,14 @@ class App extends Component {
                 field: '',
                 start: '',
                 end: '',
+                show: false,
             },
             summary: {
                 summary: '',
+                show: false,
+            },
+            preview: {
+                show: false,
             },
         };
     }
@@ -89,11 +96,19 @@ class App extends Component {
         return (
             <div className='main'>
                 <Header />
-                <PersonalInfo handler={this.handleChangePersonal} />
-                <WorkHistory handler={this.handleChangeWork} />
-                <Education handler={this.handleChangeEducation} />
-                <Summary handler={this.handleChangeSummary} />
-                <Preview data={this.state} />
+                {this.state.personal.show && (
+                    <PersonalInfo handler={this.handleChangePersonal} />
+                )}
+                {this.state.work.show && (
+                    <WorkHistory handler={this.handleChangeWork} />
+                )}
+                {this.state.education.show && (
+                    <Education handler={this.handleChangeEducation} />
+                )}
+                {this.state.summary.show && (
+                    <Summary handler={this.handleChangeSummary} />
+                )}
+                {this.state.preview.show && <Preview data={this.state} />}
             </div>
         );
     }
