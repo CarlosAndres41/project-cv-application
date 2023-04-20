@@ -21,7 +21,12 @@ const Summary = (props) => {
                     <button type='submit' className='back'>
                         Back
                     </button>
-                    <button type='submit' className='next'>
+                    <button
+                        type='submit'
+                        className='next'
+                        onClick={props.next}
+                        data-current='summary'
+                    >
                         Show Preview
                     </button>
                 </div>
