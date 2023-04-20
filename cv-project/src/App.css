@@ -166,4 +166,13 @@ textarea:focus {
     color: var(--logo);
 }
 
+.add {
+    cursor: pointer;
+    color: var(--logo);
+}
+
+.add:hover {
+    color: var(--header-bg);
+}
+
 /* Buttons End */
