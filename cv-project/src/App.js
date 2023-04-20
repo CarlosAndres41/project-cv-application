@@ -171,6 +171,7 @@ class App extends Component {
                         next={this.handleNext}
                         back={this.handleBack}
                         add={this.handleAdd}
+                        count={this.state.work.count}
                     />
                 )}
                 {this.state.education.show && (
@@ -179,6 +180,7 @@ class App extends Component {
                         next={this.handleNext}
                         back={this.handleBack}
                         add={this.handleAdd}
+                        count={this.state.education.count}
                     />
                 )}
                 {this.state.summary.show && (
