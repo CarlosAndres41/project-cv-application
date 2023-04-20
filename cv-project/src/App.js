@@ -221,6 +221,7 @@ class App extends Component {
                         data={this.state}
                         next={this.handleNext}
                         edit={this.handleEdit}
+                        save={this.handleSave}
                     />
                 )}
             </div>
