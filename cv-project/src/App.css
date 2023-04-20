@@ -49,6 +49,7 @@ form {
     flex-direction: column;
     gap: 0.5rem;
     min-width: 10rem;
+    padding-top: 1rem;
 }
 
 label {
@@ -147,6 +148,10 @@ textarea:focus {
 .buttons {
     display: flex;
     justify-content: space-between;
+}
+
+.preview-btns {
+    padding: 0 5rem;
 }
 
 .back,
